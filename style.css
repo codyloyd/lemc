@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+  font-family: 'Open Sans'
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background: url('./images/cubes.png');
+}
+
+h1 {
+  background: rgba(0,0,0,.1);
+  padding: 15px;
+  -webkit-box-shadow: 1x 0px rgba(0,0,0,0.2);
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+ul.index {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.index li {
+  font-size: 2em;
+  background: rgba(150,150,150,.1);
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: #6213D3;
+}
