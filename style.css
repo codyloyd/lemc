@@ -31,6 +31,14 @@ ul.index li {
   padding: 15px;
 }
 
+ol li {
+  margin-bottom: 16px;
+}
+
+ol {
+  max-width: 550px;
+}
+
 a{
   text-decoration: none;
   color: #6213D3;
