@@ -7,6 +7,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   background: url('./images/cubes.png');
+  padding-bottom: 35px;
 }
 
 h1 {
@@ -42,4 +43,25 @@ ol {
 a{
   text-decoration: none;
   color: #6213D3;
+}
+
+button.assignment {
+  background: #6213D3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 2em;
+  transition: all .2s;
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.33);
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.33);
+  margin: 0 auto;
+}
+
+button.assignment:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.33);
+  transform: translate(-2px,-5px)
 }
