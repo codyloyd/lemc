@@ -6,57 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="hero">
-    <h1 contenteditable>GO THROUGH THE LESSON FIRST</h1>
-  </div>
-  <div class="tagline">
-    <h2>seriously.. you need to figure that stuff out.</h2>
-  </div>
-  <style>
-  html {
-    color:black;
-    font-family: sans-serif;
-  }
+  <h1>Assignment 5 - Basic Mixing and Track Grouping</h1>
+  <p>For this assignment, you will email me your completed project file.</p>
+  <ol>
+    <li>Write 4 chord progressions!
+      <ul>
+        <li>basically, just load up one instrument that sounds nice with multiple notes playing and write a sequence of chords</li>
+        <li>make each progression 64 lines long (chords should last for multiple lines)</li>
+        <li>each progression should be in a unique key.. and the chords themselves should stay in that key</li>
+        <li>see this <a href="./files/assignment6.xrns">EXAMPLE</a></li>
+        <li>drums optional</li>
+      </ul>
+    </li>
+  </ol>
   
-  .tagline{
-    position: fixed;
-    width: 100%;
-    bottom: 10vh;
-    text-align: center;
-  }
-  .hero {
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    color:black;
-  }
-  h1 {
-    text-shadow: 10px 10px 0 rgba(0,0,0,1);
-    font-size: 80px;
-  }
-  </style>
-
-<script>
-  const hero = document.querySelector('.hero');
-  const text = hero.querySelector('h1');
-  const walk = 200;
-  function shadow(e) {
-    const {offsetWidth: width, offsetHeight: height} = hero;
-    let {offsetX: x, offsetY: y} = e
-    if (this != e.target) {
-      x = x + e.target.offsetLeft;
-      y = y + e.target.offsetTop;
-    }
-    const xwalk = Math.round((x / width * walk) - (walk / 2))
-    const ywalk = Math.round((y / height * walk) - (walk / 2))
-    text.style.textShadow = `${xwalk}px ${ywalk}px #B700EB,
-                             ${-xwalk}px ${ywalk}px 0 hsla(135,95%,60%,.5)  ,
-                             ${-ywalk}px ${-xwalk}px 0 hsla(240,95%,60%,.6), 
-                             ${ywalk}px ${-xwalk}px 0 #00A116`
-  }
-  hero.addEventListener('mousemove',shadow)
-</script>
 </body>
 </html>
